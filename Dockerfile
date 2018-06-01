@@ -6,8 +6,7 @@ RUN apt update; \
   apt upgrade -y; \
   apt install -y default-jre curl wget git ; \
   apt-get clean
-
-ENV JAVA_HOME /usr
+ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
 ENV PATH $JAVA_HOME/bin:$PATH
 
 # get maven and checksum
